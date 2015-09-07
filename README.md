@@ -1,6 +1,14 @@
-# proto-site
+# Prototyping blog engine
 
-FIXME
+Simple blog engine on Clojure's ring stack.
+
+## Done
+* Basic functionality (post, edit, delete articles)
+* Multi tags
+* Search by text,tag,date 
+
+## Todo
+* View (write css, refactor hiccup html)
 
 ## Prerequisites
 
