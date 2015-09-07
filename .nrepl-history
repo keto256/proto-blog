@@ -1,0 +1,14 @@
+(let [] (println "hi"))
+(defn rnd-build [] (list (rand-int 10) (rand-int 10) (rand-int 10)))
+rnd-build
+(rnd-build)
+(defn lzsq [] (lazy-cat (rnd-build) (lzsq)))
+(take 10 (lzsq))
+(take 10 (filter odd? (lzsq)))
+(take 10 (filter even? (lzsq)))
+(take 10 (map vector (range) (lzsq)))
+(take 10 (filter #(odd? (second %)) (map vector (range) (lzsq))))
+(take 10 (filter #(even? (second %)) (map vector (range) (lzsq))))
+(take 10 (filter #(zero? (second %)) (map vector (range) (lzsq))))
+*clojure-version*
+(:major *1)

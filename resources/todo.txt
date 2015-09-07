@@ -1,0 +1,10 @@
+refactor layout.clj's hiccup-template 
+
+0 fix pager. sometimes empty page appears, and when mini-or-max-page
+  disable the arrow-navi.
+
+1 add edit-page  auth
+
+2 separate handler ns -> view, routing
+
+3 rename db2 -> db
